@@ -3,7 +3,7 @@ using UnityEngine.Rendering;
 
 namespace Kvant
 {
-    [ExecuteInEditMode]
+    //[ExecuteInEditMode]
     [RequireComponent(typeof(MeshRenderer))]
     [AddComponentMenu("Kvant/Wig Controller")]
     public class WigController : MonoBehaviour
@@ -160,7 +160,7 @@ namespace Kvant
         bool _needsReset;
 
         // Create a buffer for simulation.
-        RenderTexture CreateSimulationBuffer()
+        public RenderTexture CreateSimulationBuffer()
         {
             var format = RenderTextureFormat.ARGBFloat;
             var width = _template.filamentCount;
@@ -347,7 +347,7 @@ namespace Kvant
 
         #region MonoBehaviour functions
 
-        void Reset()
+		public void Reset()
         {
             _reconfigured = true;
         }
