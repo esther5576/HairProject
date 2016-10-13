@@ -145,7 +145,7 @@ public class DebugLayer : MonoBehaviour {
     
   }
 	
- /* Rect guiRec = new Rect(10,10,400,300);
+ Rect guiRec = new Rect(10,10,400,300);
   string content = "";
 	void OnGUI(){
     if(!draw) return;
@@ -200,5 +200,5 @@ public class DebugLayer : MonoBehaviour {
   static public DebugLayer get(){
     if(manager == null) manager = GameObject.FindObjectOfType<DebugLayer>();
     return manager;
-  }*/
+  }
 }

@@ -106,7 +106,7 @@ namespace Kvant
             var normals = new List<Vector3>();
             var uvs = new List<Vector2>();
 
-            for (var i1 = 0; i1 < vcount; i1++)
+			for (var i1 = 0; i1 < vcount; i1++)
             {
                 var u = (i1 + 0.5f) / vcount;
 
