@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Esther/Scenes/DrawTest.unity
+- path: Assets/Esther/Scenes/scene1.unity
   isLoaded: 1
   isActive: 1

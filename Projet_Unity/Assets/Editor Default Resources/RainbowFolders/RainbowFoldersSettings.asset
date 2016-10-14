@@ -176,3 +176,59 @@ MonoBehaviour:
     Type: 1
     SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
     LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/CMU Mocap
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/ColorSuite
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/Esther
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: a65c70fcbe9ac0b4fbcbac4a0b67e64f, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 3d8f946e891cc8f4e81b1a296f8fb6be, type: 3}
+  - Key: Assets/InputLaser
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/Kino
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/Klak
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/Kvant
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/Models
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/sIBL Archive
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/Test
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: f14480b09218f3047a15b5ded872de28, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 38dec0c9e1ada504d98f8a0f4959a215, type: 3}
+  - Key: Assets/Esther/C#
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: 0b7e8970cd9b4d548883dc5b4f4997c0, type: 3}
+    LargeIcon: {fileID: 2800000, guid: ca744735eea12d84b8369b456104295c, type: 3}
+  - Key: Assets/Esther/Material
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: d7aa3931d4836f94ea17a3b67c2754b7, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 8033ba50d6a678f41bf129dd6a31ee12, type: 3}
+  - Key: Assets/Esther/Prefabs
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: 0379f5bc653a23045a15e41eb54d6db8, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 575f900c4ff32fa42a779d65da794c83, type: 3}
+  - Key: Assets/Esther/Scenes
+    Type: 1
+    SmallIcon: {fileID: 2800000, guid: 6ecc649ba46fa2c448d60a663be30ffd, type: 3}
+    LargeIcon: {fileID: 2800000, guid: 7ce51c638aeaa3840ab61c4a4af3885b, type: 3}
