@@ -53,7 +53,6 @@ namespace Kvant
         }
 
         // Filament length
-
         [SerializeField, Range(0.01f, 100)] float _length = 1;
 
         public float length {
