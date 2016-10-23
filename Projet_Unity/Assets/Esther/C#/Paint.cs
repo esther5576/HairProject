@@ -19,20 +19,24 @@ public class Paint : MonoBehaviour {
 
     public GameObject m_pDrawer;
     
+	GameObject _pointer;
+	InputSwitch _inputSwitchGame;
 
-    //public List<Material> m_apMaterial = new List<Material>();
+	//public List<Material> m_apMaterial = new List<Material>();
 
 
     void Awake()
     {
         m_pCamera = Camera.main;
-        m_pLineRenderer = m_pDrawer.GetComponent<LineRenderer>();
+        m_pLineRenderer = GetComponent<LineRenderer>();
+		_pointer = GameObject.Find ("Pointer");
     }
 
     void Update()
     {
-        if(Input.GetMouseButton(0))
-            Draw();
+        //if(Input.GetMouseButton(0))
+		if(_inputSwitchGame.hasPointer())
+       	 Draw();
             
 
         UpdateLine();
@@ -40,7 +44,7 @@ public class Paint : MonoBehaviour {
 
     void Draw()
     {
-        Vector3 vMousePos = Input.mousePosition;
+        /*Vector3 vMousePos = Input.mousePosition;
         vMousePos.z = m_pCamera.nearClipPlane + 89;
         Vector3 vMouseWorld = m_pCamera.ScreenToWorldPoint(vMousePos);
 
@@ -51,7 +55,12 @@ public class Paint : MonoBehaviour {
         m_vLastPos = vMouseWorld;
         if (m_avLinePoints == null)
             m_avLinePoints = new List<Vector3>();
-        m_avLinePoints.Add(vMouseWorld);
+        m_avLinePoints.Add(vMouseWorld);*/
+
+		m_vLastPos = _pointer.transform.position;
+		if (m_avLinePoints == null)
+			m_avLinePoints = new List<Vector3>();
+		m_avLinePoints.Add(_pointer.transform.position);
     }
 
     public void ChangeMaterial(Material _pMat)

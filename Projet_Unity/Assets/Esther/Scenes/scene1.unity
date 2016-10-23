@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_fMoveSpeed: 7.5
+  _creatureDeathSpeed: 1
 --- !u!1001 &1562645755
 Prefab:
   m_ObjectHideFlags: 0
@@ -571,3 +572,53 @@ MonoBehaviour:
   _ambientOnly: 1
   _aoShader: {fileID: 4800000, guid: 7541b5f18b1224a81927d8b1184b122b, type: 3}
   _quadMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &2027659311
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000010194140556, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010194140556, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010194140556, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010194140556, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010194140556, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010194140556, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010194140556, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010194140556, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010474021874, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_Name
+      value: DrawManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010474021874, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bc7c5f79d9dfe66409566fd74c076963, type: 2}
+  m_IsPrefabParent: 0
