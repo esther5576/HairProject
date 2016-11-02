@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Esther/Scenes/scene1.unity
+- path: Assets/Esther/Scenes/TestModifiers.unity
   isLoaded: 1
   isActive: 1
