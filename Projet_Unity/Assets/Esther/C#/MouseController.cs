@@ -27,24 +27,18 @@ public class MouseController : MonoBehaviour
 		_creatureController = _creature.GetComponent<Kvant.WigController> ();
 		_pointer = GameObject.Find ("Pointer");
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
 		UpdateCreaturePosition ();
-		//UpdateCreatureMainStatus ();
 
-		if (Input.GetKeyDown (KeyCode.A)) {
-			IncreaseCreatureHair ();
-		}
+		if (_inputSwitch.hasPointer ()) {
+			_creatureController.length = 5;
+		
+		} else {
+			_creatureController.length = 0.01f;
 
-
-		if (Input.GetKeyDown (KeyCode.A)) {
-			IncreaseCreatureHair ();
-		}
-
-		if (Input.GetKeyDown (KeyCode.S)) {
-			DecreaseCreatureHair ();
 		}
 	}
 
@@ -54,26 +48,5 @@ public class MouseController : MonoBehaviour
 		{
 			_pointer.transform.position = Vector3.Lerp(_pointer.transform.position,_inputSwitch.getLasersPositions () [0],Time.deltaTime *m_fMoveSpeed);
 		}
-	}
-
-	public void UpdateCreatureMainStatus()
-	{
-		if(_creatureController.length > 0.01f)
-		{
-			_creatureController.length -= Time.deltaTime * _creatureDeathSpeed;
-		}else{
-			_creatureController.length = 0.001f;
-			//_creatureController.length = 0.01f;
-		}
-	}
-
-	public void IncreaseCreatureHair()
-	{
-		_creatureController.length += 1;
-	}
-
-	public void DecreaseCreatureHair()
-	{
-		_creatureController.length -= 1;
 	}
 }

@@ -16,47 +16,29 @@ public class Paint : MonoBehaviour {
     int m_iLineCount = 0;
 
     Vector3 m_vLastPos = Vector3.one * float.MaxValue;
-
-    public GameObject m_pDrawer;
-    
+	    
 	GameObject _pointer;
-	InputSwitch _inputSwitchGame;
-
-	//public List<Material> m_apMaterial = new List<Material>();
-
+	InputSwitch _inputSwitch;
 
     void Awake()
     {
         m_pCamera = Camera.main;
         m_pLineRenderer = GetComponent<LineRenderer>();
 		_pointer = GameObject.Find ("Pointer");
+		_inputSwitch = GameObject.Find ("InputSystem").GetComponent<InputSwitch>();
     }
 
     void Update()
     {
-        //if(Input.GetMouseButton(0))
-		if(_inputSwitchGame.hasPointer())
-       	 Draw();
-            
+		if (_inputSwitch.hasPointer ()) {
+			Draw ();
+		}
 
         UpdateLine();
     }
 
     void Draw()
     {
-        /*Vector3 vMousePos = Input.mousePosition;
-        vMousePos.z = m_pCamera.nearClipPlane + 89;
-        Vector3 vMouseWorld = m_pCamera.ScreenToWorldPoint(vMousePos);
-
-        float fDist = Vector3.Distance(m_vLastPos, vMouseWorld);
-        if (fDist <= m_fThreshold)
-            return;
-
-        m_vLastPos = vMouseWorld;
-        if (m_avLinePoints == null)
-            m_avLinePoints = new List<Vector3>();
-        m_avLinePoints.Add(vMouseWorld);*/
-
 		m_vLastPos = _pointer.transform.position;
 		if (m_avLinePoints == null)
 			m_avLinePoints = new List<Vector3>();

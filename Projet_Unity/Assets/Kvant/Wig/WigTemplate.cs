@@ -189,6 +189,11 @@ namespace Kvant
             }
         }
 
+		void Update()
+		{
+			Debug.Log ("caca");
+		}
+
         #endregion
     }
 }
