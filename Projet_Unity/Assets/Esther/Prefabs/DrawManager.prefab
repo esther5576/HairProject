@@ -23,7 +23,7 @@ GameObject:
   - 120: {fileID: 120000012089420846}
   m_Layer: 0
   m_Name: DrawManager
-  m_TagString: Modifier
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f67a7e13e550f448a0efe7922a65cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fStartWidth: 2
-  m_fEndWidth: 1
+  m_fStartWidth: 0.5
+  m_fEndWidth: 0.1
   m_fThreshold: 0.001
 --- !u!120 &120000012089420846
 LineRenderer:
@@ -68,7 +68,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 83af853b03d435e48885d822806e2710, type: 2}
+  - {fileID: 2100000, guid: 678f660ca5700054584ffc1c44a9eedb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -88,12 +88,12 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
   m_Parameters:
-    startWidth: 1
-    endWidth: 1
+    startWidth: 0.5
+    endWidth: 0.25
     m_StartColor:
       serializedVersion: 2
       rgba: 4294967295
     m_EndColor:
       serializedVersion: 2
-      rgba: 4294967295
+      rgba: 4294835709
   m_UseWorldSpace: 1
