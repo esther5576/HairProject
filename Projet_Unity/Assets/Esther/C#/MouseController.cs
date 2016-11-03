@@ -19,6 +19,8 @@ public class MouseController : MonoBehaviour
 	[Tooltip("Death Speed of creature")]
 	public float _creatureDeathSpeed = 1f;
 
+	bool Once;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -34,11 +36,27 @@ public class MouseController : MonoBehaviour
 		UpdateCreaturePosition ();
 
 		if (_inputSwitch.hasPointer ()) {
-			_creatureController.length = 5;
-		
-		} else {
-			_creatureController.length = 0.01f;
+			if (Once == true) {
+				_creatureController.length = 0.01f;
+				_creatureController.template._filamentCount = 10;
+				_creatureController.Reset ();
+				Once = false;
+			}
 
+			if (_creatureController.length < 5) {
+				_creatureController.length += Time.deltaTime * 10;
+			}
+		} else {
+			if (Once == false) {
+				_creatureController.length = 0.01f;
+				_creatureController.template._filamentCount = 1;
+				_creatureController.Reset ();
+				Once = true;
+			}
+
+			if (_creatureController.length < 5) {
+				_creatureController.length += Time.deltaTime * 10;
+			}
 		}
 	}
 

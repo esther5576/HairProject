@@ -108,7 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _drawManagerPref: {fileID: 1000010474021874, guid: bc7c5f79d9dfe66409566fd74c076963,
     type: 2}
-  _savedMaterial: {fileID: 2100000, guid: cb9fc00f4a8ff294887728d6fd19f540, type: 2}
+  _savedMaterial: {fileID: 2100000, guid: 4b294e20f51814785818b6a20b456aa8, type: 2}
+  _creature: {fileID: 1000011543826038, guid: 488bc4c282c7aa24a86752d821ab4b85, type: 2}
 --- !u!135 &135000012596987826
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -15,9 +15,11 @@ namespace Kvant
 
         [SerializeField] int _segmentCount = 8;
 
+		[SerializeField] public int _filamentCount = 1;
+
         /// Number of filaments (read only)
         public int filamentCount {
-            get { return _foundation.width; }
+			get { return /*_foundation.width*/ _filamentCount; }
         }
 
         /// Foundation texture (read only)

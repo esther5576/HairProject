@@ -11,6 +11,8 @@ public class PointerPaintBehaviour : MonoBehaviour
 
 	public Material _savedMaterial;
 
+	public GameObject _creature;
+
 	// Use this for initialization
 	void Start () {
 		_drawManagerAct = GameObject.Find ("DrawManager");
@@ -33,6 +35,16 @@ public class PointerPaintBehaviour : MonoBehaviour
 		} else if(!_inputSwitch.hasPointer () && _doneOncePointer) {
 			_doneOncePointer = false;
 
+		}
+
+		if (Input.GetKeyDown (KeyCode.Q)) {
+			GameObject ss = Instantiate (_creature, GameObject.Find ("BASE").transform.localPosition, Quaternion.identity) as GameObject;
+			ss.transform.name = "IndeWig";
+			ss.GetComponent<Kvant.WigController> ().target = GameObject.Find ("BASE").transform;
+			ss.transform.localPosition = GameObject.Find ("BASE").transform.localPosition;
+			ss.GetComponent<Kvant.WigController> ().template._filamentCount = 1;
+			ss.GetComponent<Kvant.WigController> ().RequestReconfigurationFromEditor ();
+			ss.GetComponent<Kvant.WigController> ().Reset ();
 		}
 	}
 

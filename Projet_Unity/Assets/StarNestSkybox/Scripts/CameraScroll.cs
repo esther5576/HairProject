@@ -25,14 +25,14 @@ public class CameraScroll : MonoBehaviour {
 
 		Vector3 input = new Vector3();
 
-		if (Input.GetKey("a")) { input.x = -1; }
+		/*if (Input.GetKey("a")) { input.x = -1; }
 		if (Input.GetKey("d")) { input.x =  1; }
 
 		if (Input.GetKey("q")) { input.y = -1; }
 		if (Input.GetKey("e")) { input.y =  1; }
 
 		if (Input.GetKey("s")) { input.z = -1; }
-		if (Input.GetKey("w")) { input.z =  1; }
+		if (Input.GetKey("w")) { input.z =  1; }*/
 
 		transform.rotation = Quaternion.Euler(pitch, yaw, 0);
 
