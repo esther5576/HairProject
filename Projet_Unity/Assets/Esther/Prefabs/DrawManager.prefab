@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f67a7e13e550f448a0efe7922a65cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fStartWidth: 0.5
-  m_fEndWidth: 0.1
+  m_fStartWidth: 2
+  m_fEndWidth: 1
   m_fThreshold: 0.001
 --- !u!120 &120000012089420846
 LineRenderer:
